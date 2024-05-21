@@ -5,10 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e8e009f7-9e1a-4661-aa63-84d2c047d866" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/download.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GameFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GameFrame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GamePanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+    </list>
+    <list id="561c1df0-0247-4b25-9201-f1cd280267ea" name="Changes by STOP BRAWLING" comment="">
+      <change beforePath="$PROJECT_DIR$/src/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GamePanel.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,9 +28,38 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 2
-}]]></component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/src/GamePanel.java">
+      <ranges>
+        <range start1="4" end1="4" start2="4" end2="9" changelist="561c1df0-0247-4b25-9201-f1cd280267ea" />
+        <range start1="6" end1="7" start2="11" end2="12" changelist="e8e009f7-9e1a-4661-aa63-84d2c047d866" />
+        <range start1="14" end1="14" start2="19" end2="31" changelist="e8e009f7-9e1a-4661-aa63-84d2c047d866" />
+        <range start1="15" end1="15" start2="32" end2="38" changelist="e8e009f7-9e1a-4661-aa63-84d2c047d866" />
+        <range start1="20" end1="21" start2="43" end2="47" changelist="e8e009f7-9e1a-4661-aa63-84d2c047d866" />
+        <range start1="23" end1="24" start2="49" end2="52" changelist="e8e009f7-9e1a-4661-aa63-84d2c047d866" />
+        <range start1="27" end1="27" start2="55" end2="58" changelist="e8e009f7-9e1a-4661-aa63-84d2c047d866" />
+        <range start1="28" end1="28" start2="59" end2="62" changelist="e8e009f7-9e1a-4661-aa63-84d2c047d866" />
+        <range start1="29" end1="29" start2="63" end2="69" changelist="e8e009f7-9e1a-4661-aa63-84d2c047d866" />
+      </ranges>
+    </file>
+  </component>
+  <component name="ProblemsViewState">
+    <hideBySeverity>
+      <option value="11" />
+      <option value="12" />
+      <option value="13" />
+      <option value="14" />
+      <option value="15" />
+      <option value="16" />
+      <option value="100" />
+      <option value="200" />
+      <option value="300" />
+    </hideBySeverity>
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="2gjjybN2kh5PwNlpicAdB1EioSq" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -42,10 +74,16 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "codeWithMe.voiceChat.enabledByDefault": "false",
     "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/BT_3W2_08/IdeaProjects/APCSA_SNAKE_GAME/src",
     "onboarding.tips.debug.path": "C:/Users/BT_3W2_08/IdeaProjects/APCSA_SNAKE_GAME/src/Main.java",
     "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\BT_3W2_08\IdeaProjects\APCSA_SNAKE_GAME\src" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -56,5 +94,22 @@
       <updated>1716218135590</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="false" />
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
