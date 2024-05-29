@@ -11,6 +11,8 @@ public class GamePanel extends JPanel implements ActionListener {
     static final int NUM_UNITS = (SCREEN_WIDTH * SCREEN_HEIGHT) / UNIT_SIZE;
     static final int DELAY = 75;
 
+    private String name;
+
     final int x[] = new int[NUM_UNITS];
     final int y[] = new int[NUM_UNITS];
     int bodyParts = 6;  // initial body parts
@@ -31,6 +33,11 @@ public class GamePanel extends JPanel implements ActionListener {
         this.addKeyListener(new MyKeyAdapter());
         startGame();
         appleImage = new ImageIcon("apple.png").getImage();
+        restart= new JButton("Reset");
+        restart.setFocusable(false);
+        add(restart);
+        restart.addActionListener(this);
+        restart.set
     }
 
     public void startGame() {
