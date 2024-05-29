@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e8e009f7-9e1a-4661-aa63-84d2c047d866" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/snake.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/WelcomePanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="e8e009f7-9e1a-4661-aa63-84d2c047d866" name="Changes" comment="new">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GamePanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <list id="dbb2d817-c5ef-4710-b508-3decaeace474" name="Changes by BT_3W2_09" comment="">
       <change beforePath="$PROJECT_DIR$/src/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GamePanel.java" afterDir="false" />
@@ -51,13 +47,14 @@
   <component name="LineStatusTrackerManager">
     <file path="$PROJECT_DIR$/src/GamePanel.java">
       <ranges>
-        <range start1="12" end1="12" start2="12" end2="14" changelist="e8e009f7-9e1a-4661-aa63-84d2c047d866" />
-        <range start1="24" end1="24" start2="26" end2="27" changelist="dbb2d817-c5ef-4710-b508-3decaeace474" />
-        <range start1="25" end1="26" start2="28" end2="29" changelist="23e0fdaf-b3de-4736-b0b1-8187f75ccc26" />
-        <range start1="27" end1="27" start2="30" end2="31" changelist="23e0fdaf-b3de-4736-b0b1-8187f75ccc26" />
-        <range start1="33" end1="33" start2="37" end2="42" changelist="e8e009f7-9e1a-4661-aa63-84d2c047d866" />
-        <range start1="70" end1="70" start2="79" end2="80" changelist="dbb2d817-c5ef-4710-b508-3decaeace474" />
-        <range start1="132" end1="132" start2="142" end2="143" changelist="dbb2d817-c5ef-4710-b508-3decaeace474" />
+        <range start1="26" end1="26" start2="26" end2="27" changelist="dbb2d817-c5ef-4710-b508-3decaeace474" />
+        <range start1="27" end1="28" start2="28" end2="29" changelist="23e0fdaf-b3de-4736-b0b1-8187f75ccc26" />
+        <range start1="29" end1="29" start2="30" end2="31" changelist="23e0fdaf-b3de-4736-b0b1-8187f75ccc26" />
+        <range start1="35" end1="36" start2="37" end2="38" changelist="e8e009f7-9e1a-4661-aa63-84d2c047d866" />
+        <range start1="39" end1="40" start2="41" end2="42" changelist="e8e009f7-9e1a-4661-aa63-84d2c047d866" />
+        <range start1="77" end1="77" start2="79" end2="80" changelist="dbb2d817-c5ef-4710-b508-3decaeace474" />
+        <range start1="139" end1="139" start2="142" end2="144" changelist="dbb2d817-c5ef-4710-b508-3decaeace474" />
+        <range start1="148" end1="148" start2="153" end2="159" changelist="e8e009f7-9e1a-4661-aa63-84d2c047d866" />
       </ranges>
     </file>
   </component>
@@ -107,6 +104,7 @@
       <recent name="C:\Users\BT_3W2_08\IdeaProjects\APCSA_SNAKE_GAME\src" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\BT_3W2_08\IdeaProjects\APCSA_SNAKE_GAME\src" />
       <recent name="D:\IntelliJ\APCSA_SNAKE_GAME" />
       <recent name="D:\IntelliJ\APCSA_SNAKE_GAME\src" />
       <recent name="D:\IntelliJ\APCSA_SNAKE_GAME\image" />
@@ -121,6 +119,15 @@
       <option name="presentableId" value="Default" />
       <updated>1716218135590</updated>
     </task>
+    <task id="LOCAL-00001" summary="new">
+      <option name="closed" value="true" />
+      <created>1716999555782</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1716999555782</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -139,5 +146,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="new" />
+    <option name="LAST_COMMIT_MESSAGE" value="new" />
   </component>
 </project>

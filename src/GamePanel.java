@@ -33,11 +33,11 @@ public class GamePanel extends JPanel implements ActionListener {
         this.addKeyListener(new MyKeyAdapter());
         startGame();
         appleImage = new ImageIcon("apple.png").getImage();
-        restart= new JButton("Reset");
+        restart= new JButton("Restart");
         restart.setFocusable(false);
         add(restart);
         restart.addActionListener(this);
-        restart.set
+        restart.setVisible(false);
     }
 
     public void startGame() {
@@ -145,6 +145,14 @@ public class GamePanel extends JPanel implements ActionListener {
             move();
             checkApple();
             checkCollisions();
+        }
+        else if (e.getSource() instanceof JButton) {
+            JButton source = (JButton) e.getSource();
+            if (source == restart) {
+                running = true;
+                applesEaten = 0;
+                restart.setVisible(false);
+            }
         }
         repaint();
     }
