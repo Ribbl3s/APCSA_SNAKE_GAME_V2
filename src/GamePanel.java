@@ -72,8 +72,8 @@ public class GamePanel extends JPanel implements ActionListener {
                         g.setColor(new Color(0, 45, 180));
                         g.fillRect(x[i], y[i], UNIT_SIZE, UNIT_SIZE);
                     } else {
-                        g.setColor(new Color(0, 45, 180));
                         g.setColor(Color.blue);
+                        g.fillRect(x[i], y[i], UNIT_SIZE, UNIT_SIZE);
                     }
                 } else if (colorOption.equals("green")) {
                     if (i == 0) {
