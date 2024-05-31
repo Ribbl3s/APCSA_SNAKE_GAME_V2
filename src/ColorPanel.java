@@ -40,9 +40,9 @@ public class ColorPanel extends JPanel implements ActionListener {
         g.drawString("Hello " + name + ", please choose a snake color:", 50, 30);
 
         redButton.setLocation(50, 100);
-        blueButton.setLocation(100, 100);
-        greenButton.setLocation(150, 100);
-        randomButton.setLocation(200, 100);
+        blueButton.setLocation(150, 100);
+        greenButton.setLocation(250, 100);
+        randomButton.setLocation(350, 100);
 
     }
 
@@ -58,7 +58,7 @@ public class ColorPanel extends JPanel implements ActionListener {
             } else {
                 color = "random";
             }
-            GameFrame hi = new GameFrame(name, "red");
+            GameFrame hi = new GameFrame(name, color);
             enclosingFrame.setVisible(false);
         }
     }

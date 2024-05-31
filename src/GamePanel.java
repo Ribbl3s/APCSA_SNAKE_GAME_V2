@@ -61,18 +61,34 @@ public class GamePanel extends JPanel implements ActionListener {
             for (int i = 0; i < bodyParts; i++) {
                 if (colorOption.equals("red")) {
                     if (i == 0) {
-                        g.setColor(Color.red);
+                        g.setColor(new Color(180, 0, 45));
                         g.fillRect(x[i], y[i], UNIT_SIZE, UNIT_SIZE);
                     } else {
-                        g.setColor(new Color(180, 0, 45));
+                        g.setColor(Color.red);
                         g.fillRect(x[i], y[i], UNIT_SIZE, UNIT_SIZE);
                     }
                 } else if (colorOption.equals("blue")) {
                     if (i == 0) {
-                        g.setColor(Color.blue);
+                        g.setColor(new Color(0, 45, 180));
                         g.fillRect(x[i], y[i], UNIT_SIZE, UNIT_SIZE);
                     } else {
                         g.setColor(new Color(0, 45, 180));
+                        g.setColor(Color.blue);
+                    }
+                } else if (colorOption.equals("green")) {
+                    if (i == 0) {
+                        g.setColor(new Color(0, 180, 45));
+                        g.fillRect(x[i], y[i], UNIT_SIZE, UNIT_SIZE);
+                    } else {
+                        g.setColor(Color.green);
+                        g.fillRect(x[i], y[i], UNIT_SIZE, UNIT_SIZE);
+                    }
+                } else {
+                    if (i == 0) {
+                        g.setColor(new Color((int) (Math.random() * 255), (int) (Math.random() * 255), (int) (Math.random() * 255)));
+                        g.fillRect(x[i], y[i], UNIT_SIZE, UNIT_SIZE);
+                    } else {
+                        g.setColor(new Color((int) (Math.random() * 255), (int) (Math.random() * 255), (int) (Math.random() * 255)));
                         g.fillRect(x[i], y[i], UNIT_SIZE, UNIT_SIZE);
                     }
                 }
