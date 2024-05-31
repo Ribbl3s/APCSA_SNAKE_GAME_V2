@@ -37,7 +37,7 @@ public class ColorPanel extends JPanel implements ActionListener {
         super.paintComponent(g);
         g.setFont(new Font("Arial", Font.BOLD, 16));
         g.setColor(Color.RED);
-        g.drawString("Hello" + name + ", please choose a snake color", 50, 30);
+        g.drawString("Hello " + name + ", please choose a snake color:", 50, 30);
 
         redButton.setLocation(50, 100);
         blueButton.setLocation(100, 100);

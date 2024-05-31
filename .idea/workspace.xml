@@ -5,19 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e8e009f7-9e1a-4661-aa63-84d2c047d866" name="Changes" comment="new">
-      <change afterPath="$PROJECT_DIR$/src/ColorFrame.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ColorPanel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/WelcomeFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WelcomeFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ColorFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ColorFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ColorPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ColorPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GamePanel.java" afterDir="false" />
     </list>
     <list id="dbb2d817-c5ef-4710-b508-3decaeace474" name="Changes by BT_3W2_09" comment="Changes by BT_3W2_09">
       <change beforePath="$PROJECT_DIR$/src/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GamePanel.java" afterDir="false" />
     </list>
-    <list id="23e0fdaf-b3de-4736-b0b1-8187f75ccc26" name="Changes by BT_3W2_10" comment="">
-      <change beforePath="$PROJECT_DIR$/src/GameFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GameFrame.java" afterDir="false" />
+    <list id="23e0fdaf-b3de-4736-b0b1-8187f75ccc26" name="Changes by BT_3W2_10" comment="Changes by BT_3W2_10">
+      <change beforePath="$PROJECT_DIR$/src/ColorPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ColorPanel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GamePanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/WelcomeFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WelcomeFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/WelcomePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WelcomePanel.java" afterDir="false" />
     </list>
     <list id="561c1df0-0247-4b25-9201-f1cd280267ea" name="Changes by STOP BRAWLING" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -50,24 +48,20 @@
   <component name="LineStatusTrackerManager">
     <file path="$PROJECT_DIR$/src/GamePanel.java">
       <ranges>
-        <range start1="14" end1="14" start2="14" end2="15" changelist="dbb2d817-c5ef-4710-b508-3decaeace474" />
-        <range start1="27" end1="28" start2="28" end2="31" changelist="23e0fdaf-b3de-4736-b0b1-8187f75ccc26" />
-        <range start1="35" end1="40" start2="38" end2="38" changelist="dbb2d817-c5ef-4710-b508-3decaeace474" />
-        <range start1="63" end1="69" start2="61" end2="77" changelist="23e0fdaf-b3de-4736-b0b1-8187f75ccc26" />
-        <range start1="74" end1="75" start2="82" end2="83" changelist="23e0fdaf-b3de-4736-b0b1-8187f75ccc26" />
-        <range start1="139" end1="139" start2="147" end2="149" changelist="dbb2d817-c5ef-4710-b508-3decaeace474" />
-        <range start1="140" end1="140" start2="150" end2="160" changelist="dbb2d817-c5ef-4710-b508-3decaeace474" />
-        <range start1="148" end1="156" start2="168" end2="168" changelist="dbb2d817-c5ef-4710-b508-3decaeace474" />
-        <range start1="183" end1="183" start2="195" end2="199" changelist="dbb2d817-c5ef-4710-b508-3decaeace474" />
+        <range start1="63" end1="64" start2="63" end2="64" changelist="23e0fdaf-b3de-4736-b0b1-8187f75ccc26" />
+        <range start1="66" end1="67" start2="66" end2="67" changelist="23e0fdaf-b3de-4736-b0b1-8187f75ccc26" />
+        <range start1="71" end1="72" start2="71" end2="72" changelist="23e0fdaf-b3de-4736-b0b1-8187f75ccc26" />
+        <range start1="75" end1="76" start2="75" end2="76" changelist="23e0fdaf-b3de-4736-b0b1-8187f75ccc26" />
+        <range start1="77" end1="77" start2="77" end2="93" changelist="23e0fdaf-b3de-4736-b0b1-8187f75ccc26" />
+        <range start1="82" end1="83" start2="98" end2="99" changelist="e8e009f7-9e1a-4661-aa63-84d2c047d866" />
+        <range start1="148" end1="149" start2="164" end2="165" changelist="dbb2d817-c5ef-4710-b508-3decaeace474" />
       </ranges>
     </file>
-    <file path="$PROJECT_DIR$/src/WelcomeFrame.java">
+    <file path="$PROJECT_DIR$/src/ColorPanel.java">
       <ranges>
-        <range start1="3" end1="9" start2="3" end2="5" changelist="e8e009f7-9e1a-4661-aa63-84d2c047d866" />
-        <range start1="10" end1="10" start2="6" end2="11" changelist="e8e009f7-9e1a-4661-aa63-84d2c047d866" />
-        <range start1="11" end1="11" start2="12" end2="14" changelist="e8e009f7-9e1a-4661-aa63-84d2c047d866" />
-        <range start1="12" end1="15" start2="15" end2="16" changelist="e8e009f7-9e1a-4661-aa63-84d2c047d866" />
-        <range start1="16" end1="18" start2="17" end2="17" changelist="23e0fdaf-b3de-4736-b0b1-8187f75ccc26" />
+        <range start1="39" end1="40" start2="39" end2="40" changelist="e8e009f7-9e1a-4661-aa63-84d2c047d866" />
+        <range start1="42" end1="45" start2="42" end2="45" changelist="23e0fdaf-b3de-4736-b0b1-8187f75ccc26" />
+        <range start1="60" end1="61" start2="60" end2="61" changelist="23e0fdaf-b3de-4736-b0b1-8187f75ccc26" />
       </ranges>
     </file>
   </component>
@@ -151,7 +145,31 @@
       <option name="project" value="LOCAL" />
       <updated>1717168600626</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="new">
+      <option name="closed" value="true" />
+      <created>1717172091051</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1717172091051</updated>
+    </task>
+    <task id="LOCAL-00004" summary="new">
+      <option name="closed" value="true" />
+      <created>1717172108052</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1717172108052</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Changes by BT_3W2_10">
+      <option name="closed" value="true" />
+      <created>1717172118405</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1717172118405</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -174,6 +192,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Changes by BT_3W2_09" />
     <MESSAGE value="new" />
-    <option name="LAST_COMMIT_MESSAGE" value="new" />
+    <MESSAGE value="Changes by BT_3W2_10" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changes by BT_3W2_10" />
   </component>
 </project>
