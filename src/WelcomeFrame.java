@@ -15,6 +15,4 @@ public class WelcomeFrame {
 
         frame.setVisible(true);
     }
-
-
 }

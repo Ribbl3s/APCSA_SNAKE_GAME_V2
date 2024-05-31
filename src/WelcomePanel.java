@@ -47,7 +47,7 @@ public class WelcomePanel extends JPanel implements ActionListener {
             JButton button = (JButton) e.getSource();
             if (button == submitButton) {
                 String playerName = textField.getText();
-                GameFrame hi = new GameFrame(playerName);
+                ColorFrame frame = new ColorFrame(playerName);
                 enclosingFrame.setVisible(false);
             } else {
                 textField.setText("");

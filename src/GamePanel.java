@@ -26,7 +26,9 @@ public class GamePanel extends JPanel implements ActionListener {
     Random random;
     Image appleImage;
 
-    GamePanel() {
+    GamePanel(String str, String color) {
+        name = str;
+        colorOption = color;
         random = new Random();
         this.setPreferredSize(new Dimension(SCREEN_WIDTH, SCREEN_HEIGHT));
         this.setBackground(Color.black);
@@ -57,18 +59,28 @@ public class GamePanel extends JPanel implements ActionListener {
             g.drawImage(appleImage, appleX, appleY, UNIT_SIZE, UNIT_SIZE, this);
 
             for (int i = 0; i < bodyParts; i++) {
-                if (i == 0) {
-                    g.setColor(Color.green);
-                    g.fillRect(x[i], y[i], UNIT_SIZE, UNIT_SIZE);
-                } else {
-                    g.setColor(new Color(45, 180, 0));
-                    g.fillRect(x[i], y[i], UNIT_SIZE, UNIT_SIZE);
+                if (colorOption.equals("red")) {
+                    if (i == 0) {
+                        g.setColor(Color.red);
+                        g.fillRect(x[i], y[i], UNIT_SIZE, UNIT_SIZE);
+                    } else {
+                        g.setColor(new Color(180, 0, 45));
+                        g.fillRect(x[i], y[i], UNIT_SIZE, UNIT_SIZE);
+                    }
+                } else if (colorOption.equals("blue")) {
+                    if (i == 0) {
+                        g.setColor(Color.blue);
+                        g.fillRect(x[i], y[i], UNIT_SIZE, UNIT_SIZE);
+                    } else {
+                        g.setColor(new Color(0, 45, 180));
+                        g.fillRect(x[i], y[i], UNIT_SIZE, UNIT_SIZE);
+                    }
                 }
             }
             g.setColor(Color.red);
             g.setFont(new Font("Ink Free", Font.BOLD, 40));
             FontMetrics metrics = getFontMetrics(g.getFont());
-            g.drawString("Score: " + applesEaten, (SCREEN_WIDTH - metrics.stringWidth("Score: " + applesEaten)) / 2, g.getFont().getSize());
+            g.drawString(name + ": " + applesEaten, (SCREEN_WIDTH - metrics.stringWidth("Score: " + applesEaten)) / 2, g.getFont().getSize());
         } else {
             gameOver(g);
         }
