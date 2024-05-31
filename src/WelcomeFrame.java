@@ -12,7 +12,7 @@ public class WelcomeFrame extends JPanel implements ActionListener {
 
 
     public void actionPerformed(ActionEvent e){
-
+s
     }
 
 
