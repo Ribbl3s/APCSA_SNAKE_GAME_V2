@@ -12,6 +12,7 @@ public class GamePanel extends JPanel implements ActionListener {
     static final int DELAY = 75;
 
     private String name;
+    private String colorOption;
 
     final int x[] = new int[NUM_UNITS];
     final int y[] = new int[NUM_UNITS];
@@ -33,11 +34,6 @@ public class GamePanel extends JPanel implements ActionListener {
         this.addKeyListener(new MyKeyAdapter());
         startGame();
         appleImage = new ImageIcon("apple.png").getImage();
-        restart= new JButton("Restart");
-        restart.setFocusable(false);
-        add(restart);
-        restart.addActionListener(this);
-        restart.setVisible(false);
     }
 
     public void startGame() {
@@ -137,6 +133,18 @@ public class GamePanel extends JPanel implements ActionListener {
         g.setFont(new Font("Ink Free", Font.BOLD, 40));
         FontMetrics metrics2 = getFontMetrics(g.getFont());
         g.drawString("Score: " + applesEaten, (SCREEN_WIDTH - metrics2.stringWidth("Score: " + applesEaten)) / 2, g.getFont().getSize());
+        FontMetrics metrics3 = getFontMetrics(g.getFont());
+        g.drawString("Press 'R' to play again",(SCREEN_WIDTH - metrics3.stringWidth("Press 'R' to play again"))/2,SCREEN_HEIGHT/2 + 70);
+    }
+
+    public void restartGame() {
+        setVisible(false);
+        new GameFrame(name, colorOption);
+    }
+
+    public void dispose() {
+        JFrame parent = (JFrame) this.getTopLevelAncestor();
+        parent.dispose();
     }
 
     @Override
@@ -145,14 +153,6 @@ public class GamePanel extends JPanel implements ActionListener {
             move();
             checkApple();
             checkCollisions();
-        }
-        else if (e.getSource() instanceof JButton) {
-            JButton source = (JButton) e.getSource();
-            if (source == restart) {
-                running = true;
-                applesEaten = 0;
-                restart.setVisible(false);
-            }
         }
         repaint();
     }
@@ -180,6 +180,10 @@ public class GamePanel extends JPanel implements ActionListener {
                     if (direction != 'U') {
                         direction = 'D';
                     }
+                    break;
+                case KeyEvent.VK_R:
+                    restartGame();
+                    System.out.println("restart");
                     break;
             }
         }
