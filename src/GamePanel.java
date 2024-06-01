@@ -1,7 +1,11 @@
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
+import java.io.File;
 import java.util.Random;
+import javax.sound.sampled.AudioInputStream;
+import javax.sound.sampled.AudioSystem;
+import javax.sound.sampled.Clip;
 
 public class GamePanel extends JPanel implements ActionListener {
 
@@ -25,6 +29,10 @@ public class GamePanel extends JPanel implements ActionListener {
     Timer timer;
     Random random;
     Image appleImage;
+
+    // sound effects
+    private Clip eatingSound;
+    private Clip oofSound;
 
     GamePanel(String str, String color) {
         name = str;
@@ -98,6 +106,7 @@ public class GamePanel extends JPanel implements ActionListener {
             FontMetrics metrics = getFontMetrics(g.getFont());
             g.drawString(name + " : " + applesEaten, (SCREEN_WIDTH - metrics.stringWidth("Score: " + applesEaten)) / 2, g.getFont().getSize());
         } else {
+            playOofSound();
             gameOver(g);
         }
     }
@@ -131,6 +140,7 @@ public class GamePanel extends JPanel implements ActionListener {
 
     public void checkApple() {
         if ((x[0] == appleX) && (y[0] == appleY)) {
+            playEatSound();
             bodyParts++;
             applesEaten++;
             placeApple();
@@ -234,6 +244,29 @@ public class GamePanel extends JPanel implements ActionListener {
                     System.out.println("restart");
                     break;
             }
+        }
+    }
+
+    // sound methods
+    public void playEatSound() {
+        try {
+            AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(new File("src/eat.wav").getAbsoluteFile());
+            eatingSound = AudioSystem.getClip();
+            eatingSound.open(audioInputStream);
+            eatingSound.start();
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
+    }
+
+    public void playOofSound() {
+        try {
+            AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(new File("src/steve.wav").getAbsoluteFile());
+            eatingSound = AudioSystem.getClip();
+            eatingSound.open(audioInputStream);
+            eatingSound.start();
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
         }
     }
 }
