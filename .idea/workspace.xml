@@ -5,16 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e8e009f7-9e1a-4661-aa63-84d2c047d866" name="Changes" comment="new">
+      <change afterPath="$PROJECT_DIR$/src/eat.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/steve.wav" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ColorFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ColorFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ColorPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ColorPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GamePanel.java" afterDir="false" />
     </list>
-    <list id="dbb2d817-c5ef-4710-b508-3decaeace474" name="Changes by BT_3W2_09" comment="Changes by BT_3W2_09">
-      <change beforePath="$PROJECT_DIR$/src/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GamePanel.java" afterDir="false" />
-    </list>
-    <list id="23e0fdaf-b3de-4736-b0b1-8187f75ccc26" name="Changes by BT_3W2_10" comment="Changes by BT_3W2_10">
-      <change beforePath="$PROJECT_DIR$/src/ColorPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ColorPanel.java" afterDir="false" />
+    <list id="dbb2d817-c5ef-4710-b508-3decaeace474" name="Changes by BT_3W2_09" comment="Changes by BT_3W2_09" />
+    <list id="23e0fdaf-b3de-4736-b0b1-8187f75ccc26" name="Changes by BT_3W2_10" comment="Changes by BT_3W2_10" />
+    <list id="968abf1a-bb6c-42e2-acc1-b617f2afaaca" name="Changes by kyley" comment="">
       <change beforePath="$PROJECT_DIR$/src/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GamePanel.java" afterDir="false" />
     </list>
     <list id="561c1df0-0247-4b25-9201-f1cd280267ea" name="Changes by STOP BRAWLING" comment="" />
@@ -41,30 +38,10 @@
 }</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/Ribbl3s/APCSA_SNAKE_GAME.git&quot;,
+    &quot;url&quot;: &quot;https://github.com/Ribbl3s/APCSA_SNAKE_GAME_V2.git&quot;,
     &quot;accountId&quot;: &quot;f3aca9be-0191-429e-8337-f1b459379654&quot;
   }
 }</component>
-  <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/src/GamePanel.java">
-      <ranges>
-        <range start1="63" end1="64" start2="63" end2="64" changelist="23e0fdaf-b3de-4736-b0b1-8187f75ccc26" />
-        <range start1="66" end1="67" start2="66" end2="67" changelist="23e0fdaf-b3de-4736-b0b1-8187f75ccc26" />
-        <range start1="71" end1="72" start2="71" end2="72" changelist="23e0fdaf-b3de-4736-b0b1-8187f75ccc26" />
-        <range start1="75" end1="76" start2="75" end2="76" changelist="23e0fdaf-b3de-4736-b0b1-8187f75ccc26" />
-        <range start1="77" end1="77" start2="77" end2="93" changelist="23e0fdaf-b3de-4736-b0b1-8187f75ccc26" />
-        <range start1="82" end1="83" start2="98" end2="99" changelist="e8e009f7-9e1a-4661-aa63-84d2c047d866" />
-        <range start1="148" end1="149" start2="164" end2="165" changelist="dbb2d817-c5ef-4710-b508-3decaeace474" />
-      </ranges>
-    </file>
-    <file path="$PROJECT_DIR$/src/ColorPanel.java">
-      <ranges>
-        <range start1="39" end1="40" start2="39" end2="40" changelist="e8e009f7-9e1a-4661-aa63-84d2c047d866" />
-        <range start1="42" end1="45" start2="42" end2="45" changelist="23e0fdaf-b3de-4736-b0b1-8187f75ccc26" />
-        <range start1="60" end1="61" start2="60" end2="61" changelist="23e0fdaf-b3de-4736-b0b1-8187f75ccc26" />
-      </ranges>
-    </file>
-  </component>
   <component name="ProblemsViewState">
     <hideBySeverity>
       <option value="11" />
@@ -99,16 +76,17 @@
     "codeWithMe.voiceChat.enabledByDefault": "false",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/BT_3W2_08/IdeaProjects/APCSA_SNAKE_GAME",
+    "last_opened_file_path": "D:/IntelliJ/APCSA_SNAKE_GAME_V2/src",
     "onboarding.tips.debug.path": "C:/Users/BT_3W2_08/IdeaProjects/APCSA_SNAKE_GAME/src/Main.java",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
+    "settings.editor.selected.configurable": "CodeWithMe"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\IntelliJ\APCSA_SNAKE_GAME_V2\src" />
       <recent name="C:\Users\BT_3W2_08\IdeaProjects\APCSA_SNAKE_GAME" />
       <recent name="D:\IntelliJ\APCSA_SNAKE_GAME\src" />
       <recent name="C:\Users\BT_3W2_08\IdeaProjects\APCSA_SNAKE_GAME\src" />
