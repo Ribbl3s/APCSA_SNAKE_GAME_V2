@@ -9,7 +9,7 @@ import javax.swing.*;
 public class ColorPanel extends JPanel implements ActionListener {
     private JButton redButton;
     private JButton blueButton;
-    private JButton greenButton;
+    private JButton purpleButton;
     private JButton randomButton;
     private JFrame enclosingFrame;
     private String color;
@@ -20,15 +20,15 @@ public class ColorPanel extends JPanel implements ActionListener {
         enclosingFrame = frame;
         redButton = new JButton("Red");
         blueButton = new JButton("Blue");
-        greenButton = new JButton("Green");
+        purpleButton = new JButton("Purple");
         randomButton = new JButton("Random?");
         add(redButton);
         add(blueButton);
-        add(greenButton);
+        add(purpleButton);
         add(randomButton);
         redButton.addActionListener(this);
         blueButton.addActionListener(this);
-        greenButton.addActionListener(this);
+        purpleButton.addActionListener(this);
         randomButton.addActionListener(this);
     }
 
@@ -41,7 +41,7 @@ public class ColorPanel extends JPanel implements ActionListener {
 
         redButton.setLocation(50, 100);
         blueButton.setLocation(150, 100);
-        greenButton.setLocation(250, 100);
+        purpleButton.setLocation(250, 100);
         randomButton.setLocation(350, 100);
 
     }
@@ -53,8 +53,8 @@ public class ColorPanel extends JPanel implements ActionListener {
                 color = "red";
             } else if (button == blueButton){
                 color = "blue";
-            } else if (button == greenButton) {
-                color = "green";
+            } else if (button == purpleButton) {
+                color = "purple";
             } else {
                 color = "random";
             }

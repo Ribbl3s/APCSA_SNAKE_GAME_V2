@@ -6,6 +6,9 @@ import java.util.Random;
 import javax.sound.sampled.AudioInputStream;
 import javax.sound.sampled.AudioSystem;
 import javax.sound.sampled.Clip;
+import java.awt.image.BufferedImage;
+import javax.imageio.ImageIO;
+import java.io.IOException;
 
 public class GamePanel extends JPanel implements ActionListener {
 
@@ -35,11 +38,15 @@ public class GamePanel extends JPanel implements ActionListener {
     private Clip oofSound;
 
     GamePanel(String str, String color) {
+        try {
+            grass = ImageIO.read(new File("src/grass.png"));
+        } catch (IOException e) {
+            System.out.println(e.getMessage());
+        }
         name = str;
         colorOption = color;
         random = new Random();
         this.setPreferredSize(new Dimension(SCREEN_WIDTH, SCREEN_HEIGHT));
-        this.setBackground(Color.black);
         this.setFocusable(true);
         this.addKeyListener(new MyKeyAdapter());
         startGame();
@@ -59,6 +66,7 @@ public class GamePanel extends JPanel implements ActionListener {
     }
 
     public void draw(Graphics g) {
+        g.drawImage(grass, 0, 0, null);
         if (running) {
             for (int i = 0; i < SCREEN_HEIGHT / UNIT_SIZE; i++) {
                 g.drawLine(i * UNIT_SIZE, 0, i * UNIT_SIZE, SCREEN_HEIGHT);
@@ -83,12 +91,12 @@ public class GamePanel extends JPanel implements ActionListener {
                         g.setColor(Color.blue);
                         g.fillRect(x[i], y[i], UNIT_SIZE, UNIT_SIZE);
                     }
-                } else if (colorOption.equals("green")) {
+                } else if (colorOption.equals("purple")) {
                     if (i == 0) {
-                        g.setColor(new Color(0, 180, 45));
+                        g.setColor(new Color(75,0,130));
                         g.fillRect(x[i], y[i], UNIT_SIZE, UNIT_SIZE);
                     } else {
-                        g.setColor(Color.green);
+                        g.setColor(new Color(128,0,128));
                         g.fillRect(x[i], y[i], UNIT_SIZE, UNIT_SIZE);
                     }
                 } else {
