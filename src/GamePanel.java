@@ -36,6 +36,9 @@ public class GamePanel extends JPanel implements ActionListener {
     // sound effects
     private Clip eatingSound;
     private Clip oofSound;
+    private Clip gameplayMusic;
+
+    private BufferedImage grass;
 
     GamePanel(String str, String color) {
         try {
@@ -54,6 +57,7 @@ public class GamePanel extends JPanel implements ActionListener {
     }
 
     public void startGame() {
+        playGameplayMusic();
         placeApple();
         running = true;
         timer = new Timer(DELAY, this);
@@ -171,6 +175,8 @@ public class GamePanel extends JPanel implements ActionListener {
     }
 
     public void gameOver(Graphics g) {
+        gameplayMusic.stop();
+        gameplayMusic.close();
         g.setColor(Color.red);
         g.setFont(new Font("Ink Free", Font.BOLD, 75));
         FontMetrics metrics = getFontMetrics(g.getFont());
@@ -273,6 +279,18 @@ public class GamePanel extends JPanel implements ActionListener {
             eatingSound = AudioSystem.getClip();
             eatingSound.open(audioInputStream);
             eatingSound.start();
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
+    }
+
+    public void playGameplayMusic() {
+        try {
+            AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(new File("src/BPT.wav").getAbsoluteFile());
+            gameplayMusic = AudioSystem.getClip();
+            gameplayMusic.open(audioInputStream);
+            gameplayMusic.loop(Clip.LOOP_CONTINUOUSLY);
+            gameplayMusic.start();
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }

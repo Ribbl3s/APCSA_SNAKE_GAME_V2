@@ -5,6 +5,9 @@ import java.io.File;
 import java.io.IOException;
 import javax.imageio.ImageIO;
 import javax.swing.*;
+import javax.sound.sampled.AudioInputStream;
+import javax.sound.sampled.AudioSystem;
+import javax.sound.sampled.Clip;
 
 public class WelcomePanel extends JPanel implements ActionListener {
     private JTextField textField;
@@ -12,6 +15,9 @@ public class WelcomePanel extends JPanel implements ActionListener {
     private JButton clearButton;
     private JFrame enclosingFrame;
     private BufferedImage snake;
+
+    // sound track
+    private Clip welcomeMusic;
 
     public WelcomePanel(JFrame frame) {
         enclosingFrame = frame;
@@ -32,6 +38,7 @@ public class WelcomePanel extends JPanel implements ActionListener {
 
     @Override
     public void paintComponent(Graphics g) {
+        playBackgroundMusic();
         super.paintComponent(g);
         g.setFont(new Font("Arial", Font.BOLD, 16));
         g.setColor(Color.RED);
@@ -52,6 +59,18 @@ public class WelcomePanel extends JPanel implements ActionListener {
             } else {
                 textField.setText("");
             }
+        }
+    }
+
+    public void playBackgroundMusic() {
+        try {
+            AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(new File("src/SBT.wav").getAbsoluteFile());
+            welcomeMusic = AudioSystem.getClip();
+            welcomeMusic.open(audioInputStream);
+            welcomeMusic.loop(Clip.LOOP_CONTINUOUSLY);
+            welcomeMusic.start();
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
         }
     }
 }

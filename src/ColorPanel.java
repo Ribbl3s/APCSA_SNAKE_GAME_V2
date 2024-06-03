@@ -5,6 +5,9 @@ import java.io.File;
 import java.io.IOException;
 import javax.imageio.ImageIO;
 import javax.swing.*;
+import javax.sound.sampled.AudioInputStream;
+import javax.sound.sampled.AudioSystem;
+import javax.sound.sampled.Clip;
 
 public class ColorPanel extends JPanel implements ActionListener {
     private JButton redButton;
@@ -14,6 +17,9 @@ public class ColorPanel extends JPanel implements ActionListener {
     private JFrame enclosingFrame;
     private String color;
     private String name;
+
+    // sound effects
+    private Clip welcomeMusic;
 
     public ColorPanel(JFrame frame, String str) {
         name = str;
@@ -60,6 +66,18 @@ public class ColorPanel extends JPanel implements ActionListener {
             }
             GameFrame hi = new GameFrame(name, color);
             enclosingFrame.setVisible(false);
+        }
+    }
+
+    public void playBackgroundMusic() {
+        try {
+            AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(new File("src/SBT.wav").getAbsoluteFile());
+            welcomeMusic = AudioSystem.getClip();
+            welcomeMusic.open(audioInputStream);
+            welcomeMusic.loop(Clip.LOOP_CONTINUOUSLY);
+            welcomeMusic.start();
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
         }
     }
 }
