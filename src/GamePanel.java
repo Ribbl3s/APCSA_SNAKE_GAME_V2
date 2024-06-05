@@ -190,8 +190,11 @@ public class GamePanel extends JPanel implements ActionListener {
     }
 
     public void restartGame() {
+        gameplayMusic.stop();
+        gameplayMusic.close();
         setVisible(false);
         new GameFrame(name, colorOption);
+
     }
 
     public void dispose() {
