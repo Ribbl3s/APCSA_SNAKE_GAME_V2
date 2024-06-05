@@ -34,11 +34,11 @@ public class WelcomePanel extends JPanel implements ActionListener {
         add(clearButton);
         submitButton.addActionListener(this);
         clearButton.addActionListener(this);
+        playBackgroundMusic();
     }
 
     @Override
     public void paintComponent(Graphics g) {
-        playBackgroundMusic();
         super.paintComponent(g);
         g.setFont(new Font("Arial", Font.BOLD, 16));
         g.setColor(Color.RED);
@@ -53,6 +53,8 @@ public class WelcomePanel extends JPanel implements ActionListener {
         if (e.getSource() instanceof JButton) {
             JButton button = (JButton) e.getSource();
             if (button == submitButton) {
+                welcomeMusic.stop();
+                welcomeMusic.close();
                 String playerName = textField.getText();
                 ColorFrame frame = new ColorFrame(playerName);
                 enclosingFrame.setVisible(false);

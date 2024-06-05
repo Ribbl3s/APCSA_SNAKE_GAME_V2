@@ -36,6 +36,7 @@ public class ColorPanel extends JPanel implements ActionListener {
         blueButton.addActionListener(this);
         purpleButton.addActionListener(this);
         randomButton.addActionListener(this);
+        playBackgroundMusic();
     }
 
     @Override
@@ -64,6 +65,8 @@ public class ColorPanel extends JPanel implements ActionListener {
             } else {
                 color = "random";
             }
+            welcomeMusic.stop();
+            welcomeMusic.close();
             GameFrame hi = new GameFrame(name, color);
             enclosingFrame.setVisible(false);
         }
